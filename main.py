@@ -3,14 +3,13 @@ from pygame.locals import *
 pygame.init()
 
 pygame.display.set_caption("Hello World!")
-Screen = pygame.display.set_mode((500, 500))
+Screen = pygame.display.set_mode((300, 500))
 
 xpos = 50
 clock = pygame.time.Clock()
-# Screen.fill((255, 255, 255))
 
 while 1:
-  clock.tick(100)
+  clock.tick(60)
   
   for event in pygame.event.get():
     if event.type == QUIT:
